@@ -1,4 +1,5 @@
 import 'package:example/appb.dart';
+import 'package:example/buttons.dart';
 import 'package:example/col.dart';
 import 'package:example/form.dart';
 import 'package:example/layouts/grid.dart';
@@ -42,7 +43,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Grid(),
+      home: const ButtonExamples(),
+      // const Grid(),
       // const List(),
       // const FormSub(),
       // const Col()
