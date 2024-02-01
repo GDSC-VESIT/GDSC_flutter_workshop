@@ -7,13 +7,14 @@ import 'package:example/layouts/list.dart';
 import 'package:example/richtext.dart';
 import 'package:example/row.dart';
 import 'package:example/scaff.dart';
+import 'package:example/test.dart';
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
-//main->decision
+//main-> decision
 //runapp-> helper robots
 //myapp-> layout/map/design of floor plan
 
@@ -43,7 +44,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const ButtonExamples(),
+      home: const Test(),
+      // const ButtonExamples(),
       // const Grid(),
       // const List(),
       // const FormSub(),
@@ -101,6 +103,19 @@ class _MyHomePageState extends State<MyHomePage> {
         tooltip: 'Increment',
         child: const Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
+    );
+  }
+}
+
+class Gap extends StatelessWidget {
+  const Gap({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      color: Colors.amber,
+      height: 60,
+      width: double.infinity,
     );
   }
 }

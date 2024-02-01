@@ -15,7 +15,7 @@ class _ButtonExamplesState extends State<ButtonExamples> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.amber,
-        title: Text('Buutons'),
+        title: Text('Buttons'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
